@@ -43,7 +43,7 @@ module.exports = {
                         before: [tsImportPluginFactory({
                             "libraryName": 'antd',
                             "libraryDirectory": "es",
-                            "style": "css"
+                            "style": "index"
                         })]
                     }),//设置编译选项
                     compilerOptions: {
@@ -83,9 +83,11 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: [
-                                require('autoprefixer')
-                            ]
+                            postcssOptions: {
+                                plugins: [
+                                    require('autoprefixer')()
+                                ]
+                            }
                         }
                     },
                     {

@@ -1,14 +1,12 @@
-import React, { PropsWithChildren } from 'react';
+import React, { PropsWithChildren, ReactNode } from 'react';
 import { connect } from 'react-redux';
-import { RouteComponentProps } from 'react-router-dom';
-interface Params { }
-type Props = PropsWithChildren<RouteComponentProps<Params>>;
-function Home(props: Props) {
+// import { RouteComponentProps } from 'react-router-dom';
+
+function Home(props: PropsWithChildren<{}>) {
     return (
         <div>
             Home
         </div>
     )
 }
-export default connect(
-)(Home);
+export default Home;
