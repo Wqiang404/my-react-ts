@@ -27,6 +27,6 @@ ReactDOM.render(
     //         <Tabs />
     //     </ConfigProvider>
     // </Provider>,
-    <h1>hello word</h1>,
+    <h1>hello word test</h1>,
     document.getElementById("root")
 );
